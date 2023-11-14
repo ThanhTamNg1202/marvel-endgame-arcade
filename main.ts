@@ -80,6 +80,7 @@ statusbars.onZero(StatusBarKind.EnemyHealth, function (status) {
         info.changeScoreBy(25)
     }
     game.setGameOverScoringType(game.ScoringType.HighScore)
+    game.gameOver(true)
 })
 function boss1 () {
     MyBoss = sprites.create(img`
