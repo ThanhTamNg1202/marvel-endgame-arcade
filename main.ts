@@ -11,7 +11,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Treasure, function (sprite, otherSprite) {
     DialogMode = true
-    game.showLongText("Who is the actor who plays Iron Man in the Marvel Cinematic Universe?", DialogLayout.Bottom)
+    game.showLongText("Who is the actor that plays Iron Man in the Marvel Cinematic Universe?", DialogLayout.Bottom)
     story.showPlayerChoices("Robert Downey Jr", "Chris Evans", "Chris Hemsworth")
     if (story.checkLastAnswer("Chris Evans")) {
         music.play(music.melodyPlayable(music.wawawawaa), music.PlaybackMode.UntilDone)
